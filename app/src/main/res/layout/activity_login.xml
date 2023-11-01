@@ -5,142 +5,157 @@
     android:id="@+id/registertext"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    tools:context=".login"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-15dp">
 
     <TextView
         android:id="@+id/textView_cofee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="412dp"
         android:text="Coffee"
-        android:textSize="24sp"
+        android:textColor="#050505"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.359" />
-
-    <ImageView
-        android:id="@+id/imageView_coffee"
-        android:layout_width="144dp"
-        android:layout_height="142dp"
-        android:layout_marginTop="107px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.124"
-        app:srcCompat="@drawable/coffee" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_coffee" />
 
     <TextView
         android:id="@+id/textView_Net"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
         android:layout_marginEnd="144dp"
+        android:layout_marginBottom="412dp"
         android:text="Net"
         android:textColor="#A35A3C"
-        android:textSize="24sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView_cofee"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_coffee" />
+
+    <ImageView
+        android:id="@+id/imageView_coffee"
+        android:layout_width="207dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="107px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.359" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coffee" />
 
     <TextView
         android:id="@+id/textView_accountregister"
-        android:layout_width="wrap_content"
+        android:layout_width="308dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="388dp"
         android:text="If you don’t have an account register"
-        android:textSize="16sp"
+        android:textColor="#000000"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView_cofee"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_cofee" />
 
     <TextView
         android:id="@+id/textView_youcan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="6dp"
         android:layout_marginBottom="364dp"
         android:text="You can "
-        android:textSize="16sp"
+        android:textColor="#000000"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_accountregister"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.181" />
+
 
     <TextView
         android:id="@+id/text_Registernow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="6dp"
         android:layout_marginEnd="172dp"
         android:layout_marginBottom="260dp"
         android:text="Register here !"
         android:textColor="#A35A3C"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView_youcan"
         app:layout_constraintTop_toBottomOf="@+id/textView_accountregister"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
+        android:id="@+id/password"
+        android:layout_width="322dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="12dp"
+        android:height="48dp"
+        android:background="@drawable/edit_textbox"
+        android:drawableEnd="@drawable/baseline_visibility_off_24"
+        android:drawableTint="#4E4C4C"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_username" />
+
+    <EditText
         android:id="@+id/email_username"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_width="322dp"
+        android:layout_height="62dp"
         android:layout_marginTop="8dp"
         android:height="48dp"
+        android:background="@drawable/edit_textbox"
         android:ems="10"
         android:hint="Enter email or User name"
         android:inputType="text"
+        android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-
-        android:hint="Password"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_username"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintVertical_bias="0.574" />
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="185dp"
-        android:layout_height="46dp"
+        android:layout_width="322dp"
+        android:layout_height="59dp"
         android:layout_marginTop="34dp"
-        android:background="#A35A3C"
+        android:height="46dp"
+
+        android:background="@drawable/edit_btn"
         android:text="Login"
         android:textColorHighlight="#A35A3C"
         android:textColorLink="#A35A3C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintHorizontal_bias="0.561"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.043" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
